@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_activity_calls">
+
+    <fragment
+        android:id="@+id/navigation_activity_calls"
+        android:name="com.example.chifragmentshw.ui.activitycalls.ActivityCallsFragment"
+        android:label="@string/title_activity_calls"
+        tools:layout="@layout/fragment_activity_calls" />
+
+    <fragment
+        android:id="@+id/navigation_fragment_calls"
+        android:name="com.example.chifragmentshw.ui.fragmentcalls.FragmentCallsFragment"
+        android:label="@string/title_fragment_calls"
+        tools:layout="@layout/fragment_combined_calls" />
+
+    <fragment
+        android:id="@+id/navigation_combined_calls"
+        android:name="com.example.chifragmentshw.ui.combinedcalls.CombinedCallsFragment"
+        android:label="@string/title_combined_calls"
+        tools:layout="@layout/fragment_fragment_calls" />
+</navigation>
